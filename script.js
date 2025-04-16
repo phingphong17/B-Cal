@@ -41,23 +41,75 @@ document.querySelectorAll('.section-title, .section-subtitle, .service-card:not(
 });
 
 // Form submission handling
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData);
-        
-        // Here you would typically send the data to your server
-        console.log('Form submitted with data:', data);
-        
-        // Show success message
-        alert('Merci pour votre message ! Nous vous contacterons bientôt.');
-        this.reset();
-    });
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log('Formulaire soumis');
+
+            // Récupérer le bouton
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            
+            // Récupérer les valeurs du formulaire
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            console.log('Données du formulaire:', { name, email, message });
+
+            // Mettre à jour le bouton
+            submitButton.textContent = 'Envoi en cours...';
+            submitButton.disabled = true;
+
+            // Préparer les paramètres pour la réception du message
+            const messageParams = {
+                from_name: name,
+                from_email: email,
+                message: message,
+                to_email: "ugophong@gmail.com"  // Pour s'assurer que vous recevez le message
+            };
+
+            // Préparer les paramètres pour la confirmation
+            const confirmationParams = {
+                from_name: name,
+                from_email: email,
+                message: message,
+                email: email  // Pour envoyer la confirmation à l'expéditeur
+            };
+
+            // D'abord envoyer le message à l'administrateur (vous)
+            emailjs.send('service_zq3cxyk', 'template_gokpstk', messageParams)
+                .then(function(response) {
+                    console.log('Message reçu:', response);
+                    // Puis envoyer la confirmation à l'utilisateur
+                    return emailjs.send('service_zq3cxyk', 'template_zxrlkgc', confirmationParams);
+                })
+                .then(function(response) {
+                    console.log('Confirmation envoyée:', response);
+                    submitButton.textContent = 'Message envoyé !';
+                    contactForm.reset();
+                    setTimeout(() => {
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                    }, 3000);
+                })
+                .catch(function(error) {
+                    console.error('Erreur détaillée:', error);
+                    submitButton.textContent = 'Erreur d\'envoi';
+                    alert('Erreur lors de l\'envoi du message. Veuillez réessayer.');
+                    setTimeout(() => {
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                    }, 3000);
+                });
+        });
+    } else {
+        console.error('Le formulaire de contact n\'a pas été trouvé');
+    }
+});
 
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
