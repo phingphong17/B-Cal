@@ -671,26 +671,26 @@ body {
     }
 
     .logo-img {
-        height: 30px;
+        height: 25px;
     }
 
     .hero-logo .logo-img {
-        height: 60px;
+        height: 40px;
     }
 
     .hero {
-        padding: 3rem 0 1.5rem;
+        padding: 2rem 0 1rem;
     }
 
     .hero h1 {
-        font-size: 2rem;
-        padding-top: 60px;
+        font-size: 1.8rem;
+        padding-top: 40px;
         margin-bottom: 0.5rem;
     }
 
     .hero p {
-        font-size: 1rem;
-        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
     }
 
     .hero-buttons {
@@ -706,48 +706,48 @@ body {
         flex-direction: row;
         gap: 0.5rem;
         width: 100%;
-        margin: 1rem auto 0;
+        margin: 0.75rem auto 0;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .feature {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
     }
 
     .section {
-        padding: 2rem 0;
+        padding: 1.5rem 0;
     }
 
     .section-title {
-        font-size: 1.6rem;
-        margin-bottom: 0.75rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
     }
 
     .section-subtitle {
-        font-size: 0.9rem;
-        margin-bottom: 1.5rem;
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
     }
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 0.75rem;
         padding: 0 0.5rem;
     }
 
     .service-card {
-        padding: 1rem;
+        padding: 0.75rem;
     }
 
     .services-note {
-        margin: 1rem 0.5rem;
-        padding: 0.75rem;
+        margin: 0.75rem 0.5rem;
+        padding: 0.5rem;
     }
 
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 0.75rem;
         padding: 0 0.5rem;
     }
 
@@ -756,25 +756,25 @@ body {
     }
 
     .portfolio-content {
-        padding: 0.75rem;
+        padding: 0.5rem;
     }
 
     .portfolio-content h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .portfolio-content p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     .about-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 0.75rem;
         padding: 0 0.5rem;
     }
 
     .about-logo .large-logo {
-        height: 50px;
+        height: 40px;
     }
 
     .commitments {
@@ -782,39 +782,39 @@ body {
     }
 
     .commitment {
-        padding: 0.75rem;
-        margin-bottom: 0.75rem;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .quote-grid {
-        gap: 1.5rem;
+        gap: 1rem;
         padding: 0 0.5rem;
     }
 
     .options-grid,
     .extras-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 0.75rem;
     }
 
     .option-card,
     .extra-card {
-        padding: 1rem;
+        padding: 0.75rem;
     }
 
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 0.75rem;
         padding: 0 0.5rem;
     }
 
     .footer {
-        padding: 2rem 0 1rem;
+        padding: 1.5rem 0 0.75rem;
     }
 
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 0.75rem;
         padding: 0 0.5rem;
     }
 }
@@ -840,58 +840,58 @@ body {
     }
 
     .hero h1 {
-        font-size: 1.8rem;
-        padding-top: 50px;
+        font-size: 1.6rem;
+        padding-top: 30px;
     }
 
     .hero-logo .logo-img {
-        height: 50px;
+        height: 30px;
     }
 
     .logo-img {
-        height: 25px;
+        height: 20px;
     }
 
     .about-logo .large-logo {
-        height: 50px;
+        height: 30px;
     }
 
     .section-title {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .section-subtitle {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .feature {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     .service-card h3,
     .option-card h3,
     .extra-card h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .service-card p,
     .option-card p,
     .extra-card p {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     .portfolio-content h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .portfolio-content p {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     .btn-primary,
     .btn-secondary {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
     }
 }
 
