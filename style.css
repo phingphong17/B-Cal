@@ -1247,3 +1247,74 @@ body {
         height: 100px;
     }
 } 
+@media (max-width: 480px) {
+    .hero-features {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .feature {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+        gap: 0.4rem;
+    }
+
+    .feature i {
+        font-size: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.4rem;
+        padding-top: 40px;
+        line-height: 1.2;
+    }
+
+    .hero-logo .logo-img {
+        height: 30px;
+    }
+
+    .hero-buttons a {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .service-card i,
+    .option-card i,
+    .extra-card i {
+        font-size: 1.4rem;
+    }
+
+    .commitment {
+        gap: 0.5rem;
+    }
+
+    .commitment i {
+        font-size: 1rem;
+    }
+
+    .commitment h3 {
+        font-size: 1rem;
+    }
+
+    .commitment p {
+        font-size: 0.75rem;
+    }
+
+    .portfolio-content h3,
+    .portfolio-content p {
+        text-align: center;
+    }
+
+    .navbar .logo span {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        display: none !important;
+    }
+
+    .mobile-menu-btn {
+        display: block !important;
+    }
+}
