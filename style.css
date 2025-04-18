@@ -734,10 +734,14 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.75rem;
         padding: 0 0.5rem;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .service-card {
         padding: 0.75rem;
+        height: auto;
+        min-height: 0;
     }
 
     .services-note {
@@ -749,10 +753,14 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.75rem;
         padding: 0 0.5rem;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .portfolio-card {
         margin-bottom: 0.5rem;
+        height: auto;
+        min-height: 0;
     }
 
     .portfolio-content {
@@ -795,11 +803,15 @@ body {
     .extras-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.75rem;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .option-card,
     .extra-card {
         padding: 0.75rem;
+        height: auto;
+        min-height: 0;
     }
 
     .contact-grid {
@@ -816,6 +828,8 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.75rem;
         padding: 0 0.5rem;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
@@ -825,6 +839,17 @@ body {
     .options-grid,
     .extras-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .service-card,
+    .portfolio-card,
+    .option-card,
+    .extra-card {
+        width: 100%;
+        margin: 0 auto;
     }
 
     .hero-buttons {
@@ -837,6 +862,7 @@ body {
 
     .footer-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .hero h1 {
