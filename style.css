@@ -658,6 +658,77 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .services-grid,
+    .portfolio-grid,
+    .options-grid,
+    .extras-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .service-card,
+    .portfolio-card,
+    .option-card,
+    .extra-card {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .hero {
+        padding: 4rem 0 2rem;
+    }
+
+    .hero-logo .logo-img {
+        height: 50px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        padding-top: 50px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .hero-features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .feature {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
     .nav-links {
         display: none;
     }
@@ -676,16 +747,6 @@ body {
 
     .hero-logo .logo-img {
         height: 40px;
-    }
-
-    .hero {
-        padding: 2rem 0 1rem;
-    }
-
-    .hero h1 {
-        font-size: 1.8rem;
-        padding-top: 40px;
-        margin-bottom: 0.5rem;
     }
 
     .hero p {
@@ -730,37 +791,9 @@ body {
         margin-bottom: 1rem;
     }
 
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
-        padding: 0 0.5rem;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .service-card {
-        padding: 0.75rem;
-        height: auto;
-        min-height: 0;
-    }
-
     .services-note {
         margin: 0.75rem 0.5rem;
         padding: 0.5rem;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
-        padding: 0 0.5rem;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .portfolio-card {
-        margin-bottom: 0.5rem;
-        height: auto;
-        min-height: 0;
     }
 
     .portfolio-content {
@@ -840,8 +873,21 @@ body {
     .extras-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
         width: 100%;
-        margin: 0 auto;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature {
+        width: 100%;
+        text-align: center;
     }
 
     .service-card,
@@ -850,19 +896,6 @@ body {
     .extra-card {
         width: 100%;
         margin: 0 auto;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .hero-features {
-        flex-direction: column;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
     }
 
     .hero h1 {
@@ -890,10 +923,6 @@ body {
         font-size: 0.8rem;
     }
 
-    .feature {
-        font-size: 0.75rem;
-    }
-
     .service-card h3,
     .option-card h3,
     .extra-card h3 {
@@ -918,6 +947,11 @@ body {
     .btn-secondary {
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
 
